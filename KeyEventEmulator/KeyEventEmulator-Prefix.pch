@@ -1,0 +1,6 @@
+//
+// Prefix header for all source files of the 'KeyEventEmulator' target in the 'KeyEventEmulator' project
+//
+
+#ifdef __OBJC__
+#endif

@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A280A352155970A6001E66BB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A280A351155970A6001E66BB /* Cocoa.framework */; };
+		A280A354155970A6001E66BB /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A280A353155970A6001E66BB /* Quartz.framework */; };
+		A280A360155970A7001E66BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A280A35E155970A7001E66BB /* InfoPlist.strings */; };
+		A280A363155970A7001E66BB /* KeyEventEmulatorPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = A280A362155970A7001E66BB /* KeyEventEmulatorPlugIn.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A280A34E155970A6001E66BB /* KeyEventEmulator.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyEventEmulator.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		A280A351155970A6001E66BB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A280A353155970A6001E66BB /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		A280A356155970A6001E66BB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A280A357155970A6001E66BB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A280A358155970A6001E66BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A280A35D155970A6001E66BB /* KeyEventEmulator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyEventEmulator-Info.plist"; sourceTree = "<group>"; };
+		A280A35F155970A7001E66BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A280A361155970A7001E66BB /* KeyEventEmulatorPlugIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyEventEmulatorPlugIn.h; sourceTree = "<group>"; };
+		A280A362155970A7001E66BB /* KeyEventEmulatorPlugIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyEventEmulatorPlugIn.m; sourceTree = "<group>"; };
+		A280A364155970A7001E66BB /* KeyEventEmulator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyEventEmulator-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A280A34A155970A6001E66BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A280A352155970A6001E66BB /* Cocoa.framework in Frameworks */,
+				A280A354155970A6001E66BB /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A280A342155970A6001E66BB = {
+			isa = PBXGroup;
+			children = (
+				A280A35B155970A6001E66BB /* KeyEventEmulator */,
+				A280A350155970A6001E66BB /* Frameworks */,
+				A280A34F155970A6001E66BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A280A34F155970A6001E66BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A280A34E155970A6001E66BB /* KeyEventEmulator.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A280A350155970A6001E66BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A280A351155970A6001E66BB /* Cocoa.framework */,
+				A280A353155970A6001E66BB /* Quartz.framework */,
+				A280A355155970A6001E66BB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A280A355155970A6001E66BB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A280A356155970A6001E66BB /* AppKit.framework */,
+				A280A357155970A6001E66BB /* CoreData.framework */,
+				A280A358155970A6001E66BB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A280A35B155970A6001E66BB /* KeyEventEmulator */ = {
+			isa = PBXGroup;
+			children = (
+				A280A361155970A7001E66BB /* KeyEventEmulatorPlugIn.h */,
+				A280A362155970A7001E66BB /* KeyEventEmulatorPlugIn.m */,
+				A280A35C155970A6001E66BB /* Supporting Files */,
+			);
+			path = KeyEventEmulator;
+			sourceTree = "<group>";
+		};
+		A280A35C155970A6001E66BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A280A35D155970A6001E66BB /* KeyEventEmulator-Info.plist */,
+				A280A35E155970A7001E66BB /* InfoPlist.strings */,
+				A280A364155970A7001E66BB /* KeyEventEmulator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A280A34D155970A6001E66BB /* KeyEventEmulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A280A367155970A7001E66BB /* Build configuration list for PBXNativeTarget "KeyEventEmulator" */;
+			buildPhases = (
+				A280A349155970A6001E66BB /* Sources */,
+				A280A34A155970A6001E66BB /* Frameworks */,
+				A280A34B155970A6001E66BB /* Resources */,
+				A280A34C155970A6001E66BB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyEventEmulator;
+			productName = KeyEventEmulator;
+			productReference = A280A34E155970A6001E66BB /* KeyEventEmulator.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A280A344155970A6001E66BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A280A347155970A6001E66BB /* Build configuration list for PBXProject "KeyEventEmulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A280A342155970A6001E66BB;
+			productRefGroup = A280A34F155970A6001E66BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A280A34D155970A6001E66BB /* KeyEventEmulator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A280A34B155970A6001E66BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A280A360155970A7001E66BB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A280A34C155970A6001E66BB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies the built plug-in to \"~/Library/Graphics/Quartz Composer Plug-Ins\" and overrides any previous version at that location\n\nmkdir -p \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins\"\nrm -rf \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins/KeyEventEmulator.plugin\"\ncp -rf \"$BUILT_PRODUCTS_DIR/KeyEventEmulator.plugin\" \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A280A349155970A6001E66BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A280A363155970A7001E66BB /* KeyEventEmulatorPlugIn.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A280A35E155970A7001E66BB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A280A35F155970A7001E66BB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A280A365155970A7001E66BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A280A366155970A7001E66BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A280A368155970A7001E66BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyEventEmulator/KeyEventEmulator-Prefix.pch";
+				INFOPLIST_FILE = "KeyEventEmulator/KeyEventEmulator-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		A280A369155970A7001E66BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyEventEmulator/KeyEventEmulator-Prefix.pch";
+				INFOPLIST_FILE = "KeyEventEmulator/KeyEventEmulator-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A280A347155970A6001E66BB /* Build configuration list for PBXProject "KeyEventEmulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A280A365155970A7001E66BB /* Debug */,
+				A280A366155970A7001E66BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A280A367155970A7001E66BB /* Build configuration list for PBXNativeTarget "KeyEventEmulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A280A368155970A7001E66BB /* Debug */,
+				A280A369155970A7001E66BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A280A344155970A6001E66BB /* Project object */;
+}
