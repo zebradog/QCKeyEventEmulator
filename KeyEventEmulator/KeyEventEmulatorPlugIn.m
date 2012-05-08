@@ -8,7 +8,6 @@
 
 // It's highly recommended to use CGL macros instead of changing the current context for plug-ins that perform OpenGL rendering
 #import <OpenGL/CGLMacro.h>
-
 #import "KeyEventEmulatorPlugIn.h"
 
 #define	kQCPlugIn_Name				@"Key Event Emulator"
