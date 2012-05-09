@@ -6,22 +6,17 @@
 //  Copyright (c) 2012 ZD Studios, Inc. All rights reserved.
 //
 
-// It's highly recommended to use CGL macros instead of changing the current context for plug-ins that perform OpenGL rendering
-#import <OpenGL/CGLMacro.h>
-
 #import "KeyEventEmulatorPlugIn.h"
 
 #define	kQCPlugIn_Name				@"Key Event Emulator"
 #define	kQCPlugIn_Description		@"Input: ASCII value of the key pressed and a series of booleans [0,1] representing the various accessory keys (derived from Freeboard).\n\nOutput: A string representation of the keys pressed (e.g. 'command option r'), as well as those keys having been executed at a system level via AppleScript."
 
 @implementation KeyEventEmulatorPlugIn
-// Here you need to declare the input / output properties as dynamic as Quartz Composer will handle their implementation
-//@dynamic inputFoo, outputBar;
-@dynamic inputCharacter, inputShift, inputFunction, inputControl, inputOption, inputCommand, outputText, inputTrigger;
+
+@dynamic inputCharacter, inputShift, inputFunction, inputControl, inputOption, inputCommand, inputTrigger;
 
 + (NSDictionary *)attributes
 {
-	// Return a dictionary of attributes describing the plug-in (QCPlugInAttributeNameKey, QCPlugInAttributeDescriptionKey...).
 	return [NSDictionary dictionaryWithObjectsAndKeys:kQCPlugIn_Name, QCPlugInAttributeNameKey, kQCPlugIn_Description, QCPlugInAttributeDescriptionKey, nil];
 }
 
@@ -41,25 +36,17 @@
         return [NSDictionary dictionaryWithObjectsAndKeys: @"Command", QCPortAttributeNameKey, nil];
 	if([key isEqualToString:@"inputTrigger"])
         return [NSDictionary dictionaryWithObjectsAndKeys: @"Trigger Event", QCPortAttributeNameKey, nil];
-    if([key isEqualToString:@"outputText"])
-        return [NSDictionary dictionaryWithObjectsAndKeys: @"Output", QCPortAttributeNameKey, nil];
 	return nil;
 }
 
 + (QCPlugInExecutionMode)executionMode
 {
-	return kQCPlugInExecutionModeProcessor;
+	return kQCPlugInExecutionModeConsumer;
 }
 
 + (QCPlugInTimeMode)timeMode
 {
 	return kQCPlugInTimeModeNone;
-}
-
-- (id)init
-{
-	self = [super init];
-	return self;
 }
 @end
 
@@ -72,44 +59,23 @@
 
 - (void)enableExecution:(id <QCPlugInContext>)context { }
 
-- (BOOL)execute:(id <QCPlugInContext>)context atTime:(NSTimeInterval)time withArguments:(NSDictionary *)arguments
+- (BOOL)execute:(id<QCPlugInContext>)context atTime:(NSTimeInterval)time withArguments:(NSDictionary*)arguments
 {
     if ([self didValueForInputKeyChange:@"inputTrigger"] && self.inputTrigger) {
 
-        //execute applescript command for keystroke
-        
-        NSMutableString *output = [NSMutableString stringWithString:@""];
-        NSDictionary *error = nil;
         NSMutableString *scriptText = [NSMutableString stringWithString:@"tell application \"System Events\" to "];
         [scriptText appendFormat:@"keystroke \"%@\" using {",self.inputCharacter];
-        if (self.inputControl) {
-            [scriptText appendString:@"control down, "];
-            [output appendString:@"control "];
-        }
-        if (self.inputFunction) {
-            [scriptText appendString:@"function down, "];
-            [output appendString:@"function "];
-        }
-        if (self.inputOption) {
-            [scriptText appendString:@"option down, "];
-            [output appendString:@"option "];
-        }
-        if (self.inputShift) {
-            [scriptText appendString:@"shift down, "];
-            [output appendString:@"shift "];
-        }
-        if (self.inputCommand) {	
-            [scriptText appendString:@"command down, "];
-            [output appendString:@"command "];
-        }
+        if (self.inputControl)  [scriptText appendString:@"control down, "];
+        if (self.inputFunction) [scriptText appendString:@"function down, "];
+        if (self.inputOption)[scriptText appendString:@"option down, "];
+        if (self.inputShift) [scriptText appendString:@"shift down, "];
+        if (self.inputCommand) [scriptText appendString:@"command down, "];
 		[scriptText replaceCharactersInRange:NSMakeRange([scriptText length]-2, 1) withString:@""];
         [scriptText appendString:@"}"];
-        [output appendString:self.inputCharacter];
 
-        NSAppleScript *script = [[[NSAppleScript alloc] initWithSource:scriptText] autorelease];
-        [script executeAndReturnError:&error];
-        self.outputText=[NSString stringWithString:output];
-        
+		NSAppleScript *script = [[[NSAppleScript alloc] initWithSource:scriptText] autorelease];
+		[script executeAndReturnError:nil];
+             
     }
     return YES;
 }

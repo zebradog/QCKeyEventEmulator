@@ -18,7 +18,6 @@
 @property(assign) BOOL inputControl;
 @property(assign) BOOL inputOption;
 @property(assign) BOOL inputCommand;
-@property(assign) NSString* outputText;
 @property(assign) BOOL inputTrigger;
 
 @end
