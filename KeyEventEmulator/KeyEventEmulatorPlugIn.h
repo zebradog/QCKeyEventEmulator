@@ -8,23 +8,17 @@
 
 #import <Quartz/Quartz.h>
 
-@interface KeyEventEmulatorPlugIn : QCPlugIn{
-    int previousASCII,currentASCII;
-    int previousShift, currentShift;
-    int previousFunction, currentFunction;
-    int previousControl, currentControl;
-    int previousOption, currentOption;
-    int previousCommand, currentCommand;
-}
+@interface KeyEventEmulatorPlugIn : QCPlugIn{}
 
 // Declare here the properties to be used as input and output ports for the plug-in e.g.
 
 @property(assign) NSString* inputCharacter;
-@property(assign) NSString* inputShift;
-@property(assign) NSString* inputFunction;
-@property(assign) NSString* inputControl;
-@property(assign) NSString* inputOption;
-@property(assign) NSString* inputCommand;
+@property(assign) BOOL inputShift;
+@property(assign) BOOL inputFunction;
+@property(assign) BOOL inputControl;
+@property(assign) BOOL inputOption;
+@property(assign) BOOL inputCommand;
 @property(assign) NSString* outputText;
+@property(assign) BOOL inputTrigger;
 
 @end
