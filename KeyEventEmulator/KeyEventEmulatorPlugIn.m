@@ -61,21 +61,26 @@
 
 - (BOOL)execute:(id<QCPlugInContext>)context atTime:(NSTimeInterval)time withArguments:(NSDictionary*)arguments
 {
-    if ([self didValueForInputKeyChange:@"inputTrigger"] && self.inputTrigger) {
+    if ([self didValueForInputKeyChange:@"inputTrigger"] && self.inputTrigger && [self.inputCharacter length] > 0) {
 
         NSMutableString *scriptText = [NSMutableString stringWithString:@"tell application \"System Events\" to "];
-        [scriptText appendFormat:@"keystroke \"%@\" using {",self.inputCharacter];
-        if (self.inputControl)  [scriptText appendString:@"control down, "];
-        if (self.inputFunction) [scriptText appendString:@"function down, "];
-        if (self.inputOption)[scriptText appendString:@"option down, "];
-        if (self.inputShift) [scriptText appendString:@"shift down, "];
-        if (self.inputCommand) [scriptText appendString:@"command down, "];
-		[scriptText replaceCharactersInRange:NSMakeRange([scriptText length]-2, 1) withString:@""];
-        [scriptText appendString:@"}"];
-
+        [scriptText appendFormat:@"keystroke \"%@\"",self.inputCharacter];
+		 if (self.inputControl 
+		 || self.inputFunction 
+		 || self.inputOption
+		 || self.inputShift
+		 || self.inputCommand){
+			 [scriptText appendString:@"using {"];
+			 if (self.inputControl)  [scriptText appendString:@"control down, "];
+			 if (self.inputFunction) [scriptText appendString:@"function down, "];
+			 if (self.inputOption)[scriptText appendString:@"option down, "];
+			 if (self.inputShift) [scriptText appendString:@"shift down, "];
+			 if (self.inputCommand) [scriptText appendString:@"command down, "];
+			 [scriptText replaceCharactersInRange:NSMakeRange([scriptText length]-2, 1) withString:@""];
+			 [scriptText appendString:@"}"];
+		}
 		NSAppleScript *script = [[[NSAppleScript alloc] initWithSource:scriptText] autorelease];
 		[script executeAndReturnError:nil];
-             
     }
     return YES;
 }
