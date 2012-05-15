@@ -1,0 +1,192 @@
+// !$*UTF8*$!
+{
+	A280A344155970A6001E66BB /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeTarget = A280A34D155970A6001E66BB /* KeyEventEmulator */;
+		breakpoints = (
+			C99CE78E1562ADE000C0F2CB /* KeyEventEmulatorPlugIn.h:29 */,
+		);
+		codeSenseManager = C99CE73215629F4F00C0F2CB /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1867,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 358784816;
+			PBXWorkspaceStateSaveDate = 358784816;
+		};
+		perUserProjectItems = {
+			C99CE8021562BD0300C0F2CB /* PBXTextBookmark */ = C99CE8021562BD0300C0F2CB /* PBXTextBookmark */;
+			C99CE80D1562BE2600C0F2CB /* PBXTextBookmark */ = C99CE80D1562BE2600C0F2CB /* PBXTextBookmark */;
+			C99CE81F1562C01000C0F2CB /* PBXTextBookmark */ = C99CE81F1562C01000C0F2CB /* PBXTextBookmark */;
+			C99CE83D1562D28300C0F2CB /* PBXTextBookmark */ = C99CE83D1562D28300C0F2CB /* PBXTextBookmark */;
+			C99CE84B1562E57C00C0F2CB /* XCBuildMessageTextBookmark */ = C99CE84B1562E57C00C0F2CB /* XCBuildMessageTextBookmark */;
+			C99CE8641562EB7400C0F2CB /* PBXTextBookmark */ = C99CE8641562EB7400C0F2CB /* PBXTextBookmark */;
+		};
+		sourceControlManager = C99CE73115629F4F00C0F2CB /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	A280A34D155970A6001E66BB /* KeyEventEmulator */ = {
+		activeExec = 0;
+	};
+	A280A361155970A7001E66BB /* KeyEventEmulatorPlugIn.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1315, 1065}}";
+			sepNavSelRange = "{689, 0}";
+			sepNavVisRange = "{0, 934}";
+			sepNavWindowFrame = "{{1169, 67}, {1374, 1193}}";
+		};
+	};
+	A280A362155970A7001E66BB /* KeyEventEmulatorPlugIn.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2045, 3185}}";
+			sepNavSelRange = "{2630, 0}";
+			sepNavVisRange = "{2071, 1737}";
+			sepNavWindowFrame = "{{902, 225}, {1374, 1193}}";
+		};
+	};
+	C99CE73115629F4F00C0F2CB /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	C99CE73215629F4F00C0F2CB /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	C99CE7751562AA1E00C0F2CB /* Events.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = Events.h;
+		path = /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/Headers/Events.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2061, 11843}}";
+			sepNavSelRange = "{11764, 0}";
+			sepNavVisRange = "{6319, 2253}";
+		};
+	};
+	C99CE78E1562ADE000C0F2CB /* KeyEventEmulatorPlugIn.h:29 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = A280A361155970A7001E66BB /* KeyEventEmulatorPlugIn.h */;
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 29;
+		modificationTime = 358788576.397405;
+		originalNumberOfMultipleMatches = 0;
+		state = 1;
+	};
+	C99CE7FB1562BCFC00C0F2CB /* CGEventTypes.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = CGEventTypes.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/CoreGraphics.framework/Versions/A/Headers/CGEventTypes.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2061, 5785}}";
+			sepNavSelRange = "{2061, 16}";
+			sepNavVisRange = "{930, 1767}";
+		};
+	};
+	C99CE8021562BD0300C0F2CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C99CE7751562AA1E00C0F2CB /* Events.h */;
+		name = "Events.h: 293";
+		rLen = 0;
+		rLoc = 11764;
+		rType = 0;
+		vrLen = 2253;
+		vrLoc = 6319;
+	};
+	C99CE80D1562BE2600C0F2CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C99CE7FB1562BCFC00C0F2CB /* CGEventTypes.h */;
+		name = "CGEventTypes.h: 55";
+		rLen = 16;
+		rLoc = 2061;
+		rType = 0;
+		vrLen = 1767;
+		vrLoc = 930;
+	};
+	C99CE8111562BE2600C0F2CB /* IOLLEvent.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = IOLLEvent.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/hidsystem/IOLLEvent.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2061, 7202}}";
+			sepNavSelRange = "{9077, 22}";
+			sepNavVisRange = "{8338, 1439}";
+		};
+	};
+	C99CE81F1562C01000C0F2CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C99CE8111562BE2600C0F2CB /* IOLLEvent.h */;
+		name = "IOLLEvent.h: 248";
+		rLen = 22;
+		rLoc = 9077;
+		rType = 0;
+		vrLen = 1439;
+		vrLoc = 8338;
+	};
+	C99CE83D1562D28300C0F2CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A280A361155970A7001E66BB /* KeyEventEmulatorPlugIn.h */;
+		name = "KeyEventEmulatorPlugIn.h: 22";
+		rLen = 0;
+		rLoc = 636;
+		rType = 0;
+		vrLen = 817;
+		vrLoc = 0;
+	};
+	C99CE84B1562E57C00C0F2CB /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Use of undeclared identifier 'self'";
+		fRef = A280A362155970A7001E66BB /* KeyEventEmulatorPlugIn.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 98;
+		rType = 1;
+	};
+	C99CE8641562EB7400C0F2CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A280A362155970A7001E66BB /* KeyEventEmulatorPlugIn.m */;
+		name = "KeyEventEmulatorPlugIn.m: 69";
+		rLen = 0;
+		rLoc = 2630;
+		rType = 0;
+		vrLen = 1737;
+		vrLoc = 2071;
+	};
+}
