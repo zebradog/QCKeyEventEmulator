@@ -13,7 +13,7 @@
 
 @implementation KeyEventEmulatorPlugIn
 
-@dynamic inputCharacter, inputShift, inputFunction, inputControl, inputOption, inputCommand, inputTrigger, keyPressed, source, keyDown, keyUp;
+@dynamic inputCharacter, inputShift, inputFunction, inputControl, inputOption, inputCommand, inputTrigger;
 
 + (NSDictionary *)attributes
 {
@@ -52,23 +52,16 @@
 
 @implementation KeyEventEmulatorPlugIn (Execution)
 
-- (BOOL)startExecution:(id <QCPlugInContext>)context
-{
-	self.keyPressed = NO;
-	self.source = CGEventSourceCreate(kCGEventSourceStateCombinedSessionState);
-	return YES;
-}
+- (BOOL)startExecution:(id <QCPlugInContext>)context{ return YES; }
 
 - (void)enableExecution:(id <QCPlugInContext>)context { }
 
 - (BOOL)execute:(id<QCPlugInContext>)context atTime:(NSTimeInterval)time withArguments:(NSDictionary*)arguments
 {
-    if ([self didValueForInputKeyChange:@"inputTrigger"]) {
-		if(self.keyPressed){
-			self.keyPressed = false;
-			CGEventPost(kCGAnnotatedSessionEventTap, keyUp);
-			CFRelease(keyUp);
-		}else if(self.inputTrigger && [self.inputCharacter length] > 0){
+    if ([self didValueForInputKeyChange:@"inputTrigger"] && self.inputTrigger && [self.inputCharacter length] > 0) {
+
+			CGEventSourceRef source = CGEventSourceCreate(kCGEventSourceStateCombinedSessionState);
+		
 			CGEventFlags flags = 0;
 			if (self.inputControl)  flags = (flags | kCGEventFlagMaskControl);
 			if (self.inputFunction) flags = (flags | kCGEventFlagMaskSecondaryFn);
@@ -78,24 +71,24 @@
 			
 			CGKeyCode key = (CGKeyCode)keyCodeForKeyString([self.inputCharacter UTF8String]);
 			
-			self.keyDown = CGEventCreateKeyboardEvent(self.source, key, TRUE);
+			CGEventRef keyDown = CGEventCreateKeyboardEvent(source, key, TRUE);
 			CGEventSetFlags(keyDown, flags);
-			self.keyUp = CGEventCreateKeyboardEvent(self.source, key, FALSE);
+			CGEventRef keyUp = CGEventCreateKeyboardEvent(source, key, FALSE);
 			
-			CGEventPost(kCGAnnotatedSessionEventTap, keyDown);
+			CGEventPost(kCGHIDEventTap, keyDown);
+			CGEventPost(kCGHIDEventTap, keyUp);
+			
+			CFRelease(keyUp);
 			CFRelease(keyDown);
+			CFRelease(source);
 			
-			self.keyPressed = true;
-		}
     }
     return YES;
 }
 
 - (void)disableExecution:(id <QCPlugInContext>)context { }
 
-- (void)stopExecution:(id <QCPlugInContext>)context {
-	CFRelease(self.source);
-}
+- (void)stopExecution:(id <QCPlugInContext>)context { }
 
 //from: http://ritter.ist.psu.edu/projects/RUI/macosx/rui.c
 //  Created by Bill Stevenson on 3 January 2005

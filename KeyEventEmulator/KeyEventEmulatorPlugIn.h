@@ -19,10 +19,6 @@
 @property(assign) BOOL inputOption;
 @property(assign) BOOL inputCommand;
 @property(assign) BOOL inputTrigger;
-@property(assign) BOOL keyPressed; 
-@property(assign) CGEventSourceRef source;
-@property(assign) CGEventRef keyDown;
-@property(assign) CGEventRef keyUp;
 
 void postKeyWithModifiers(CGKeyCode key, CGEventFlags modifiers);
 char * keyStringForKeyCode(int keyCode);
