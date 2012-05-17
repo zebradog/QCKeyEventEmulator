@@ -1,0 +1,255 @@
+// !$*UTF8*$!
+{
+	A280A344155970A6001E66BB /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = C98EB49A15655695001212D1 /* Quartz Composer */;
+		activeTarget = A280A34D155970A6001E66BB /* KeyEventEmulator */;
+		breakpoints = (
+			C99CE78E1562ADE000C0F2CB /* KeyEventEmulatorPlugIn.h:25 */,
+		);
+		codeSenseManager = C99CE73215629F4F00C0F2CB /* Code sense */;
+		executables = (
+			C98EB49A15655695001212D1 /* Quartz Composer */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					1288,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1400,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 358961905;
+			PBXWorkspaceStateSaveDate = 358961905;
+		};
+		perUserProjectItems = {
+			C98EB484156554A6001212D1 /* XCBuildMessageTextBookmark */ = C98EB484156554A6001212D1 /* XCBuildMessageTextBookmark */;
+			C98EB48A156554A6001212D1 /* PBXTextBookmark */ = C98EB48A156554A6001212D1 /* PBXTextBookmark */;
+			C98EB4B315655994001212D1 /* PBXTextBookmark */ = C98EB4B315655994001212D1 /* PBXTextBookmark */;
+			C98EB4B415655994001212D1 /* PBXTextBookmark */ = C98EB4B415655994001212D1 /* PBXTextBookmark */;
+			C99CE8021562BD0300C0F2CB /* PBXTextBookmark */ = C99CE8021562BD0300C0F2CB /* PBXTextBookmark */;
+			C99CE80D1562BE2600C0F2CB /* PBXTextBookmark */ = C99CE80D1562BE2600C0F2CB /* PBXTextBookmark */;
+			C99CE81F1562C01000C0F2CB /* PBXTextBookmark */ = C99CE81F1562C01000C0F2CB /* PBXTextBookmark */;
+			C99CE83D1562D28300C0F2CB /* PBXTextBookmark */ = C99CE83D1562D28300C0F2CB /* PBXTextBookmark */;
+		};
+		sourceControlManager = C99CE73115629F4F00C0F2CB /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	A280A34D155970A6001E66BB /* KeyEventEmulator */ = {
+		activeExec = 0;
+	};
+	A280A361155970A7001E66BB /* KeyEventEmulatorPlugIn.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1315, 1065}}";
+			sepNavSelRange = "{618, 0}";
+			sepNavVisRange = "{0, 781}";
+			sepNavWindowFrame = "{{1169, 67}, {1374, 1193}}";
+		};
+	};
+	A280A362155970A7001E66BB /* KeyEventEmulatorPlugIn.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1578, 2860}}";
+			sepNavSelRange = "{3268, 0}";
+			sepNavVisRange = "{1576, 1860}";
+			sepNavWindowFrame = "{{902, 225}, {1374, 1193}}";
+		};
+	};
+	C98EB484156554A6001212D1 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Property implementation must have its declaration in interface 'KeyEventEmulatorPlugIn'";
+		fRef = A280A362155970A7001E66BB /* KeyEventEmulatorPlugIn.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 15;
+		rType = 1;
+	};
+	C98EB48A156554A6001212D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A280A361155970A7001E66BB /* KeyEventEmulatorPlugIn.h */;
+		name = "KeyEventEmulatorPlugIn.h: 22";
+		rLen = 0;
+		rLoc = 618;
+		rType = 0;
+		vrLen = 818;
+		vrLoc = 0;
+	};
+	C98EB49A15655695001212D1 /* Quartz Composer */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		launchableReference = C98EB49B15655695001212D1 /* Quartz Composer.app */;
+		libgmallocEnabled = 0;
+		name = "Quartz Composer";
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	C98EB49B15655695001212D1 /* Quartz Composer.app */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = wrapper.application;
+		name = "Quartz Composer.app";
+		path = "/Developer/Applications/Quartz Composer.app";
+		sourceTree = "<absolute>";
+	};
+	C98EB4B315655994001212D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A280A362155970A7001E66BB /* KeyEventEmulatorPlugIn.m */;
+		name = "KeyEventEmulatorPlugIn.m: 79";
+		rLen = 0;
+		rLoc = 3268;
+		rType = 0;
+		vrLen = 1860;
+		vrLoc = 1576;
+	};
+	C98EB4B415655994001212D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A280A361155970A7001E66BB /* KeyEventEmulatorPlugIn.h */;
+		name = "KeyEventEmulatorPlugIn.h: 21";
+		rLen = 0;
+		rLoc = 618;
+		rType = 0;
+		vrLen = 781;
+		vrLoc = 0;
+	};
+	C99CE73115629F4F00C0F2CB /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	C99CE73215629F4F00C0F2CB /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	C99CE7751562AA1E00C0F2CB /* Events.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = Events.h;
+		path = /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/Headers/Events.h;
+		sourceTree = "<absolute>";
+	};
+	C99CE78E1562ADE000C0F2CB /* KeyEventEmulatorPlugIn.h:25 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = A280A361155970A7001E66BB /* KeyEventEmulatorPlugIn.h */;
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 25;
+		modificationTime = 358788576.397405;
+		originalNumberOfMultipleMatches = 0;
+		state = 1;
+	};
+	C99CE7FB1562BCFC00C0F2CB /* CGEventTypes.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = CGEventTypes.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/CoreGraphics.framework/Versions/A/Headers/CGEventTypes.h;
+		sourceTree = "<absolute>";
+	};
+	C99CE8021562BD0300C0F2CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C99CE7751562AA1E00C0F2CB /* Events.h */;
+		name = "Events.h: 293";
+		rLen = 0;
+		rLoc = 11764;
+		rType = 0;
+		vrLen = 2253;
+		vrLoc = 6319;
+	};
+	C99CE80D1562BE2600C0F2CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C99CE7FB1562BCFC00C0F2CB /* CGEventTypes.h */;
+		name = "CGEventTypes.h: 55";
+		rLen = 16;
+		rLoc = 2061;
+		rType = 0;
+		vrLen = 1767;
+		vrLoc = 930;
+	};
+	C99CE8111562BE2600C0F2CB /* IOLLEvent.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = IOLLEvent.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/Headers/hidsystem/IOLLEvent.h;
+		sourceTree = "<absolute>";
+	};
+	C99CE81F1562C01000C0F2CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C99CE8111562BE2600C0F2CB /* IOLLEvent.h */;
+		name = "IOLLEvent.h: 248";
+		rLen = 22;
+		rLoc = 9077;
+		rType = 0;
+		vrLen = 1439;
+		vrLoc = 8338;
+	};
+	C99CE83D1562D28300C0F2CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A280A361155970A7001E66BB /* KeyEventEmulatorPlugIn.h */;
+		name = "KeyEventEmulatorPlugIn.h: 22";
+		rLen = 0;
+		rLoc = 618;
+		rType = 0;
+		vrLen = 817;
+		vrLoc = 0;
+	};
+}
