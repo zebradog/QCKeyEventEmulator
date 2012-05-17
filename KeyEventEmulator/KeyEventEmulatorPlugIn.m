@@ -3,7 +3,7 @@
 //  KeyEventEmulator
 //
 //  Created by Brad Orego <brad@zebradog.com> & Matt Cook <matt@zebradog.com>.
-//  Copyright (c) 2012 ZD Studios, Inc. All rights reserved.
+//  Copyright (c) 2012 ZD Studios, Inc.
 //
 
 #import "KeyEventEmulatorPlugIn.h"
